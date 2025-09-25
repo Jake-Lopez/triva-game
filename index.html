@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game - General Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 General Knowledge Trivia</h1>
+            <p>Test your knowledge with our fun trivia questions!</p>
+        </header>
+
+        <div id="game-container">
+            <!-- Start Screen -->
+            <div id="start-screen" class="screen active">
+                <div class="start-content">
+                    <h2>Welcome to Trivia Game!</h2>
+                    <p>Answer 10 general knowledge questions and see how you score!</p>
+                    <button id="start-btn" class="btn btn-primary">Start Game</button>
+                </div>
+            </div>
+
+            <!-- Game Screen -->
+            <div id="game-screen" class="screen">
+                <div class="game-info">
+                    <span id="question-counter">Question 1 of 10</span>
+                    <span id="score">Score: 0</span>
+                </div>
+                
+                <div id="question-container">
+                    <h2 id="question-text">Question will appear here</h2>
+                    
+                    <div id="answers-container">
+                        <button class="answer-btn" data-answer="0">Answer A</button>
+                        <button class="answer-btn" data-answer="1">Answer B</button>
+                        <button class="answer-btn" data-answer="2">Answer C</button>
+                        <button class="answer-btn" data-answer="3">Answer D</button>
+                    </div>
+                    
+                    <div id="feedback" class="feedback hidden">
+                        <p id="feedback-text"></p>
+                        <button id="next-btn" class="btn btn-secondary">Next Question</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="results-screen" class="screen">
+                <div class="results-content">
+                    <h2>Game Complete!</h2>
+                    <div id="final-score">Your Score: 0/10</div>
+                    <div id="score-message"></div>
+                    <div class="results-actions">
+                        <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
